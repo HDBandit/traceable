@@ -9,10 +9,10 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface Traceable {
     
-    String description() default "";
+    String description() default "Empty description";
     
     String dateFormat() default "dd.MM.yyy HH:mm:ss:SSSSSSS";
     
-    String tracerQualifier() default "";
+    String tracerQualifier() default "default tracer";
 
 }
