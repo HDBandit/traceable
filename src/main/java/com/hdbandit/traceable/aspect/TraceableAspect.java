@@ -39,7 +39,7 @@ public class TraceableAspect {
         
         Tracer tracer = (Tracer) applicationContext.getBean(methodAnnotation.tracerQualifier());
         
-        String description = String.format("<Tracer: %s, Description: %s , JoinPoint: %s>", methodAnnotation.tracerQualifier(), methodAnnotation.description(), joinPointDescription);
+        String description = String.format("<Tracer: %s, Description: %s , JoinPoint: %s , Arguments: %s>", methodAnnotation.tracerQualifier(), methodAnnotation.description(), joinPointDescription, jointPoint.getArgs());
         
         tracer.trace(String.format("START trace: %s :: %s", simpleDateFormat.format(new Date()), description));
         

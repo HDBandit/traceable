@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hdbandit</groupId>
 	<artifactId>traceable</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>Traceable</name>
 	<description>Functionality to log all interactions with a spring bean</description>
 
